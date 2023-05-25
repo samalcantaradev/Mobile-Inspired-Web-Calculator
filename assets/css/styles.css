@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  transition: all 0.5s ease;
+}
+
+body{
+  font-family: "Poppins", sans-serif;
+  background-image: url('../img/sun.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+.calc{
+  position: relative;
+  height: auto;
+  width: auto;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+#display{
+  margin: 0 auto;
+  height: 130px;
+  width: auto;
+  max-width: 280px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 27px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  overflow-x: scroll;
+}
+
+#display::-webkit-scrollbar{
+  display: block;
+  height: 3px;
+}
+
+
+button{
+  border-radius: 10px;
+  height: 60px;
+  width: 60px;
+  margin: 6px;
+  border: none;
+  font-size: 1rem;
+  background-color: #f7f7f7;
+}
+
+.light_dark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F9F9F9;
+  border-radius: 10px;
+  padding: 10px;
+  width: 90px;
+  max-width: 25%;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.light_dark span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  height: 30px;
+  width: 30px;
+  margin: 9px;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons{
+  padding: 20px 10px 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px 10px 10px 10px;
+}
+
+button:hover{
+  transform: scale(1.1);
+}
+
+button#equal {
+ border-radius: 10px;
+ background-color: #3a82fe;
+}
+
+button#cero{
+  width: 130px;
+}
+
+.calc{
+  background-color: #fff;
+}
+
+.calc button#clear{
+  background-color: #8eb7fe;
+}
+
+.calc button#div{
+  background-color: #6da1fd;
+}
+
+.calc button#porc{
+  background-color: #4f8efc;
+}
+
+.calc button#backspace{
+  background-color: #7d63ff;
+}
+
+.calc button#mult{
+  background-color: #8eb7fe;
+}
+
+.calc button#mas{
+  background-color: #6da1fd;
+}
+
+.calc button#menos{
+  background-color: #4f8efc;
+}
+
+/*modo oscuro*/
+
+.calc.dark{
+  background-color: #22252D;
+}
+
+.calc.dark #display {
+  color: #f9f9f9;
+}
+
+.calc.dark #btn {
+ background-color: #292D36;
+}
+
+.calc.dark button.btn-number{
+  background-color: #272B33;
+  color: #f7f7f7;
+}
+
+.calc.dark button.btn-op{
+  background-color: #272B33;
+  color: #f7f7f7;
+}
+
+.calc.dark #l-d {
+  background-color: #292D36;
+  color: #f7f7f7;
+}
+
+body.dark {
+  font-family: "Poppins", sans-serif;
+  background-image: url('../img/moon.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

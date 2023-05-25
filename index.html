@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/releases/v6.4.0/css/all.css">
+  <link rel="shortcut icon" href="assets/img/calculator.png" type="image/x-icon">
+  <title>Calculadora</title>
+</head>
+<body class>
+  <div class="container">
+    <div class="calc dark">
+      <div class="light_dark" id="l-d">
+        <span class="light_sun"><i class="fa-light fa-sun-bright"></i></span>
+        <span class="dark_moon"><i class="fa-light fa-moon"></i></span>
+      </div>
+      <div class="display-screen">
+        <div id="display"></div>
+      </div>
+      <div class="buttons" id="btn">
+        <table>
+          <tr>
+            <td><button class="btn-op" id="clear">C</button></td>
+            <td><button class="btn-op" id="div"><i class="fa-regular fa-divide"></i></button></td>
+            <td><button class="btn-op" id="porc"><i class="fa-regular fa-percent"></i></button></td>
+            <td><button class="btn-op" id="backspace"><i class="fa-regular fa-delete-left"></i>
+          </tr>
+          <tr>
+            <td><button class="btn-number" id="7">7</button></td>
+            <td><button class="btn-number" id="8">8</button></td>
+            <td><button class="btn-number" id="9">9</button></td>
+            <td><button class="btn-op" id="mult"><i class="fa-regular fa-xmark"></i></button></td>
+          </tr>
+          <tr>
+            <td><button class="btn-number" id="4">4</button></td>
+            <td><button class="btn-number" id="5">5</button></td>
+            <td><button class="btn-number" id="6">6</button></td>
+            <td><button class="btn-op" id="mas"><i class="fa-regular fa-plus"></i></button></td>
+          </tr>
+          <tr>
+            <td><button class="btn-number" id="1">1</button></td>
+            <td><button class="btn-number" id="2">2</button></td>
+            <td><button class="btn-number" id="3">3</button></td>
+            <td><button class="btn-op" id="menos"><i class="fa-regular fa-minus"></i></button></td>
+          </tr>
+          <tr>
+            <td><button class="btn-op" id="op-anterior"><i class="fa-regular fa-rotate-left"></i></button></td>
+            <td><button class="btn-number" id="0">0</button></td>
+            <td><button class="btn-op" id="punto">.</button></td>
+            <td><button class="btn-op btn-equal" id="equal"><i class="fa-regular fa-equals"></i></button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
